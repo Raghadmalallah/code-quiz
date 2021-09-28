@@ -18,6 +18,16 @@ p {
   padding-top: 90px;
   position: relative;
 }
+.high-score {
+    position: relative;
+    top: 10px;
+    left:10;
+}
+.time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 .start-butn {
     border: none;
  
