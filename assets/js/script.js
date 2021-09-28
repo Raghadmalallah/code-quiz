@@ -1,33 +1,44 @@
-// WHEN the page loads:
+//* varaibls for the qustions //
+var questions = [
+    {
+        title: "Inside which HTML element do we put the JavaScript?",
+        choices: ['<js>', '<scripting>', '<script>', '<javascript>'],
+        answer: '<script>'
+    },
+    {
+        title: "Where is the correct place to insert a JavaScript?",
+        choices: ['The <head> section','The <body>', 'The <Title>', 'Both <head> section and <body>section'],
+        answer: '<body>'
+    },
+    {
+        title: "How do you create a function in JavaScript?",
+        choices: ['function:myFunction()','function = myFunction()', 'function myFunction()', 'varFunction = function (myFunction)'],
+        answer: '<unction myFunction()'
+    },
 
-// The following elements are shown:
-// - high scores link
-// - timer at 0
-// - title
-// - welcome message
-// - start button
+    {
+        title: "How can you add a comment in a JavaScript?",
+        choices: ['*This is a Comment','//This is a comment', '<!--This is a comment-->', 'comment = (comment)'],
+        answer: '//This is a comment'
+    },
+    {
+        title: "How do you declare a JavaScript variable?",
+        choices: ['v myName;','var myName;', 'variable myName;', 'declare.var.MyName'],
+        answer: 'var myName'
+    },
+]
+//* set the timer//
+var counter = 10;
+setInterval ( function(){
+    counter--;
 
-// WHEN the user clicks start
+    if( counter >=0 ){
+        id = document.getElementById("time");
+        id.innerHtml = counter;
+    }
+if ( counter === 0) {
+    id.innerHtml = "complete";
+}
 
-// - Hide/remove title, welcome message, and start button
+}, 1000);
 
-// - Display question: What keyword can be used to print the type of a value?
-
-// - display buttons with the following text below the question:
-//   - A true
-//   - B string
-//   - C typeof
-//   - D function
-
-// - Start countdown: display "Time: 120" to start.
-// - Update the time display each second counting down.
-
-
-// WHEN the user clicks a button
-// IF the user clicked "C typeof" button
-
-
-// IF the user clicked "A true", "B string", or "D function"
-
-
-// WHEN the time remaining reaches 0 or less
