@@ -1,0 +1,24 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    color:slategray;
+    font-size: 230%;
+  }
+p {
+    color:black;
+    font-size: 100%;
+  }
+
+.start-butn {
+    border: none;
+    color: white;
+    background-color:forestgreen;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 3px 1px;
+    cursor: pointer;
+  }
