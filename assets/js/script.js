@@ -27,18 +27,19 @@ var questions = [
         answer: 'var myName'
     },
 ]
-//* set the timer//
-var counter = 10;
-setInterval ( function(){
-    counter--;
 
-    if( counter >=0 ){
-        id = document.getElementById("time");
-        id.innerHtml = counter;
-    }
-if ( counter === 0) {
-    id.innerHtml = "complete";
+var questionsEl = document.querySelector("#questions");
+var timerEl = document.querySelector("#time");
+
+
+var time = questions.length * 20;
+var timerId;
+
+function startQuiz(){
+    var startScreenEl = document.getElementById("start-screen");
+    startScreenEl.setAttribute("class", "hide");
+    questionsEl.removeAttribute("class");
+    timerEl.textContent = time;
+    getQuestion();
 }
-
-}, 1000);
 

@@ -28,7 +28,7 @@ p {
     top: 10px;
     right: 10px;
 }
-.start-butn {
+#start-butn {
     border: none;
   position: absolute;
   top: 120%;
